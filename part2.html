@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container{
+            width: 50%;
+            min-height: 70vh;
+            border: 20px solid rgb(130, 130, 192);
+            background-color: white;
+            padding: 10px;
+           
+        }
+
+        .row{
+            display: flex;
+            gap: 20px;
+        }
+
+        .row-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+        .row-item1 {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+        }
+
+        label{
+            color: lightseagreen;
+        }
+
+        h1{
+         text-align: center;
+        }
+
+        button{
+            display: flex;
+            text-align: right;
+            background-color: lightseagreen;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Acount</h1>
+        <form action="">
+            <div class="row">
+                <div class="row-item">
+                    <label for="">FIRST NAME*</label>
+                    <input type="text" placeholder="Enter your first name" >
+                </div>
+    
+                <div class="row-item">
+                    <label for="">LAST NAME*</label>
+                     <input type="text" placeholder="Enter your last name">
+                </div>
+            </div>
+
+
+            <div class="row-item">
+                <label for="">EMAIL*</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="row">
+                <div class="row-item">
+                    <label for="">PASSWORD*</label>
+                    <input type="password" placeholder="password">
+                </div>
+                
+                <div class="row-item">
+                    <label for="">CONFIRM PASSWORD*</label>
+                    <input type="password" placeholder="password">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="row-item1">
+                    <label for="">GENDER</label>
+                    <label for=""><input type="radio" name="gender">MALE</label>
+                    <label for=""><input type="radio" name="gender">FEMALE</label>
+                </div>
+
+                <div class="row-item1">
+                    <label for="">HOBBIES</label>
+                    <label for=""><input type="checkbox">MUSIC</label>
+                    <label for=""><input type="checkbox">TRAVEL</label>
+                    <label for=""><input type="checkbox">SPORT</label>
+                    <label for=""><input type="checkbox">MOVIE</label>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="row-item">
+                    <label for="">Source of income</label>
+                    <select name="" id="">
+                        <option value="">Employed</option>
+                        <option value="">Employ</option>
+                        <option value="">Sale</option>
+                        <option value="">Trading</option>
+                    </select>                 
+                </div>
+
+                <div class="row-item1">
+                    <label for="">INCOME</label>
+                    <input type="range">
+                    <span>20k</span>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="row-item">
+                    <label for="">UPLOAD PROFILE PICTURE</label>
+                    <input type="file">                  
+                </div>
+                
+                <div class="row-item">               
+                    <label for="">AGE</label>
+                    <input type="number" placeholder="18">                  
+                </div>
+            </div>
+
+
+            <div class="row-item">
+                <label for="">BIO</label>
+                <textarea name="" id="" placeholder="write your bio"></textarea>
+            </div>
+
+        </form>
+        <button type="submit">CREATE</button>
+    </div>
+</body>
+</html>
